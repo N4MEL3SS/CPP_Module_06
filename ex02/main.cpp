@@ -1,7 +1,13 @@
-#include <iostream>
+#include "Identify.hpp"
 
 int main()
 {
-	std::cout << "Hello, World!" << std::endl;
+	Base *base;
+
+	base = generate();
+	identify(base);
+	identifyRef(*base);
+
+	delete base;
 	return 0;
 }

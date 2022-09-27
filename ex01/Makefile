@@ -1,4 +1,4 @@
-NAME = ex00
+NAME = ex01
 CXX = clang++
 INCLUDES = -I $(HEAD_DIR)
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -7,11 +7,11 @@ RM = rm -rf
 
 #	HEADER
 HEAD_DIR = ./
-HEADS = Conversion.hpp
+HEADS = Serialization.hpp
 
 #	SOURCE
 SRCS_DIR = ./
-SRCS =	Conversion.cpp		\
+SRCS =	Serialization.cpp		\
 		main.cpp
 
 #	OBJECT_FILES

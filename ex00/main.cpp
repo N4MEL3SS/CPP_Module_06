@@ -1,7 +1,21 @@
-#include <iostream>
+#include "Conversion.hpp"
 
-int main()
+void convert(const char *input)
 {
-	std::cout << "Hello, World!" << std::endl;
+	Conversion myConversion(input);
+
+	myConversion.printChar();
+	myConversion.printInt();
+	myConversion.printFloat();
+	myConversion.printDouble();
+}
+
+int main(int argc, char **argv)
+{
+	if (argc != 2)
+		convert("42");
+	else
+		convert(argv[1]);
+
 	return 0;
 }
